@@ -25,6 +25,10 @@
           <li><a href="#" id="{{- _slug -}}" class="active">
             <span class="{{ _class }} {{ _icon }}">{{- _title -}}</span>
           </a></li>
+        {%- elseif _page.url == alanacanann.github.io/resume.html -%}
+          <li><a href="https://alanacanann.github.io/resume.pdf" id="{{- _slug -}}" class="active">
+            <span class="{{ _class }} {{ _icon }}">{{- _title -}}</span>
+          </a></li>
         {%- elsif _page.url -%}
           <li><a href="{{- _page.url | absolute_url -}}" id="{{- _slug -}}-link">
             <span class="{{ _class }} {{ _icon }}">{{- _title -}}</span>
